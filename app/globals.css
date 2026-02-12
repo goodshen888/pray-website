@@ -27,14 +27,13 @@ body {
 @keyframes burn {
   from {
     transform: scaleY(1);
-    transform-origin: top;
   }
 
   to {
     transform: scaleY(0.2);
-    transform-origin: top;
   }
 }
+
 
 @keyframes smoke {
   0% {

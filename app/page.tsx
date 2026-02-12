@@ -56,15 +56,6 @@ const styles: any = {
     display: "flex",
     gap: "60px",
     marginBottom: "80px",
-  }
-};
-
-
-
-  incenseWrapper: {
-    display: "flex",
-    gap: "60px",
-    marginBottom: "80px",
   },
 
 incense: {
@@ -73,23 +64,34 @@ incense: {
   background: "#f97316",
   position: "relative",
   borderRadius: "4px",
-  transformOrigin: "top",
-  animation: "burn 8s linear infinite",
+
+  transformOrigin: "bottom",   // ⭐ 必须在这里
+  animation: "burn 12s linear forwards",
 },
 
 
-smoke: {
-  position: "absolute",
-  top: "-45px",
-  left: "-12px",
-  width: "32px",
-  height: "32px",
-  background: "rgba(230,230,230,0.85)",
-  borderRadius: "50%",
-  filter: "blur(14px)",
-  animation: "smoke 4s infinite ease-out",
-},
+  fire: {
+    position: "absolute",
+    top: "-8px",
+    left: "-3px",
+    width: "14px",
+    height: "14px",
+    background: "#fff7ed",
+    borderRadius: "50%",
+    boxShadow: "0 0 20px 8px orange",
+  },
 
+  smoke: {
+    position: "absolute",
+    top: "-45px",
+    left: "-12px",
+    width: "32px",
+    height: "32px",
+    background: "rgba(230,230,230,0.85)",
+    borderRadius: "50%",
+    filter: "blur(14px)",
+    animation: "smoke 4s infinite ease-out",
+  },
 
   title: {
     fontSize: "56px",
