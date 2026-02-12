@@ -32,7 +32,7 @@ export default function Home() {
 
       </div>
 
-      <h1 style={styles.title}>小蛙姐姐在线祈福</h1>
+      <h1 style={styles.title}>在线祈福</h1>
 
       <button style={styles.button}>
         开始祈福
