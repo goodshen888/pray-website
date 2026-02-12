@@ -52,17 +52,18 @@ const styles: any = {
     animation: "burn 8s linear infinite",
   },
 
-  smoke: {
-    position: "absolute",
-    top: "-35px",
-    left: "-8px",
-    width: "24px",
-    height: "24px",
-    background: "rgba(220,220,220,0.5)",
-    borderRadius: "50%",
-    filter: "blur(10px)",
-    animation: "smoke 5s infinite ease-in-out",
-  },
+smoke: {
+  position: "absolute",
+  top: "-45px",
+  left: "-12px",
+  width: "32px",
+  height: "32px",
+  background: "rgba(230,230,230,0.85)",
+  borderRadius: "50%",
+  filter: "blur(14px)",
+  animation: "smoke 4s infinite ease-out",
+},
+
 
   title: {
     fontSize: "56px",
