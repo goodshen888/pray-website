@@ -25,16 +25,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 @keyframes burn {
-  0% {
+  from {
     transform: scaleY(1);
     transform-origin: top;
   }
 
-  100% {
-    transform: scaleY(0.25);
+  to {
+    transform: scaleY(0.2);
     transform-origin: top;
   }
 }
+
 @keyframes smoke {
   0% {
     transform: translateY(0) scale(1);
