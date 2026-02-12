@@ -1,49 +1,63 @@
 export default function Home() {
   return (
-    <main
-      style={{
-        height: "100vh",
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1544427920-c49ccfb85579?q=80&w=2070')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <div
-        style={{
-          backgroundColor: "rgba(0,0,0,0.55)",
-          padding: "60px",
-          borderRadius: "20px",
-          textAlign: "center",
-          color: "white",
-        }}
-      >
-        <h1 style={{ fontSize: "64px", marginBottom: "20px" }}>
-          在线祈福
-        </h1>
-
-        <p style={{ fontSize: "22px", marginBottom: "40px" }}>
-          点燃心香 · 传递愿望
-        </p>
-
-        <button
-          style={{
-            padding: "18px 40px",
-            fontSize: "20px",
-            borderRadius: "12px",
-            border: "none",
-            cursor: "pointer",
-            background: "#f59e0b",
-            color: "white",
-            fontWeight: "bold",
-          }}
-        >
-          🔥 开始祈福
-        </button>
+    <main style={styles.container}>
+      
+      {/* 三根香 */}
+      <div style={styles. incenseWrapper}>
+        <div style={styles.incense}></div>
+        <div style={styles.incense}></div>
+        <div style={styles.incense}></div>
       </div>
+
+      <h1 style={styles.title}>在线祈福</h1>
+
+      <button style={styles.button}>
+        开始祈福
+      </button>
+
     </main>
   );
 }
+
+const styles: any = {
+  container: {
+    height: "100vh",
+    background: "linear-gradient(#0f172a,#020617)",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    color: "white",
+  },
+
+  incenseWrapper: {
+    display: "flex",
+    gap: "40px",
+    marginBottom: "60px",
+  },
+
+  incense: {
+    width: "6px",
+    height: "160px",
+    background: "#f97316",
+    position: "relative",
+    borderRadius: "4px",
+    animation: "burn 6s linear infinite",
+  },
+
+  title: {
+    fontSize: "52px",
+    marginBottom: "30px",
+    letterSpacing: "6px",
+  },
+
+  button: {
+    padding: "16px 40px",
+    fontSize: "20px",
+    borderRadius: "12px",
+    border: "none",
+    background: "#f59e0b",
+    color: "white",
+    cursor: "pointer",
+  },
+};
