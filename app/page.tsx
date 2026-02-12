@@ -42,7 +42,6 @@ export default function Home() {
 }
 
 const styles: any = {
-
   container: {
     height: "100vh",
     background: "linear-gradient(#0f172a,#020617)",
@@ -53,18 +52,13 @@ const styles: any = {
     color: "white",
   },
 
-  fire: {
-    position: "absolute",
-    top: "-8px",
-    left: "-3px",
-    width: "14px",
-    height: "14px",
-    background: "#fff7ed",
-    borderRadius: "50%",
-    boxShadow: "0 0 20px 8px orange",
-  },
-
+  incenseWrapper: {
+    display: "flex",
+    gap: "60px",
+    marginBottom: "80px",
+  }
 };
+
 
 
   incenseWrapper: {
